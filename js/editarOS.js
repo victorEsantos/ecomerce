@@ -18,8 +18,7 @@ $(function () {
         $(this).parents('.conteudoIndividual').remove();
         i--;
     });
-}); 
-
+});
 
 function clearAllFields(){
     var fieldElements = document.querySelectorAll(".conteudoIndividual");
@@ -70,3 +69,5 @@ function clearAllFields(){
     inputObs0.value = "";
 
 }
+
+
