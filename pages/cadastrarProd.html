@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar Produtos</title>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="../js/cadastrarProd.js"></script>
+        <link rel="stylesheet" href="../css/cadastrarProd.css">
+
+    </head>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">E-comerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Clientes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Visualizar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Cadastrar</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ordens de Serviço
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pages/visualizarOS.html">Visualizar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages/cadastrarOS.html">Cadastrar</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Produtos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Visualizar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages/cadastrarProd.html">Cadastrar</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Estoque
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Visualizar</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Cadastrar</a>
+                </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ADM AREA</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+    
+    <div class="main">
+
+        <h1 class="text-center">Cadastro de Produtos</h1>
+        <br><br>
+
+        <form class="formSec">
+            <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="inputNome">Nome do produto</label>
+                <input type="nome" class="form-control" id="inputNome" placeholder="Nome do produto">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Preço do Produto</label>
+                <input type="number" class="form-control" id="inputLastName">
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Nome do produto</label>
+                    <input type="nome" class="form-control" id="inputEmail" placeholder="Nome do produto">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCpf">CPF</label>
+                    <input type="text" class="form-control" id="inputCpf" placeholder="CPF">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputRua">Rua</label>
+                <input type="text" class="form-control" id="inputRua" placeholder="Rua">
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-control">
+                <option selected value="0">Choose...</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputCep">CEP</label>
+                <input type="text" class="form-control" id="inputCep">
+            </div>
+            </div>           
+            <br>
+            <br>
+            
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="clearAllFields()">Limpar Campos</button>
+        </form>
+    </div>
+
+</body>
+</html>
