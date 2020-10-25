@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Produtos</title>
+    <title>Editar Produto</title>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
         integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -68,7 +68,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="visualizarProd.html">Visualizar</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item active" href="cadastrarProd.html">Cadastrar</a>
+                        <a class="dropdown-item" href="cadastrarProd.html">Cadastrar</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -85,7 +85,7 @@
 
     <div class="main">
 
-        <h1 class="text-center">Cadastro de Produtos</h1>
+        <h1 class="text-center">Editar Produto</h1>
         <br><br>
 
         <form class="formSec needs-validation" novalidate>
@@ -106,7 +106,7 @@
             <div class="form-row">
                 <div class="col-md-12 mb-3">
                     <label for="validationCustom01">Imagem Produto</label>
-                    <input type="file" class="form-control btn-light btn-sm" id="prodImage" placeholder="Nome Produto" required>
+                    <input type="file" class="form-control" id="prodNome" placeholder="Nome Produto" required>
                     <div class="valid-feedback">Está OK!</div>
                     <div class="invalid-feedback">Este campo é obrigatorio</div>
                 </div>

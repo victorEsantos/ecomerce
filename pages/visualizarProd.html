@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Produtos</title>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+        integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/visualizarProd.css">
+    <script src="../js/visualizarProd.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">E-comerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuarios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizarUsuarios.html">Visualizar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastrarUsuarios.html">Cadastrar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ordens de Serviço
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizarOS.html">Visualizar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastrarOS.html">Cadastrar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item active" href="visualizarProd.html">Visualizar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastrarProd.html">Cadastrar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ADM AREA</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..."
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="main">
+
+        <h1 class="text-center">Visualizar Produtos</h1>
+        <br><br>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesqu" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <br><br>
+        <div class="formSec">
+
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3">
+                <img class="card-img-top" src="../images/geforce-rtx-2080-ti-graphics-reinvented-1200x630-ogimage.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Título do card</h5>
+                    <p class="card-text">MOUSE GAMER SUPERFRAME, BOSS, 10000 DPI, RGB, 7 BOTÕES, BLACK, SENSOR
+                        PIXART 3325</p>
+                    <span>R$100,00</span>
+                    <button href="" class="btn btn-danger float-right" onclick="">Excluir</button>
+                    <a href="editarProd.html" class="btn btn-primary float-right mr-3">Editar</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
