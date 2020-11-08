@@ -1,0 +1,22 @@
+<h2>Produtos da categoria: {{categoria.nome}}</h2>
+
+{{#each produtos}}
+<div class="card col-md-4 d-inline-block ml-5 mr-5 mt-5">
+    <img class="card-img-top" src="{{imagem}}" alt="Imagem de capa do card">
+    <div class="card-body">
+        <h5 class="card-title">{{nome}}</h5>
+        <p class="card-text">{{descricao}}</p>
+        <span>Qtd: {{quantidade}}</span>
+        <br>
+        <span>Preço: R${{preco}}</span>
+
+        <form action="/admin/produtos/deletar" method="POST" class="pb-5">
+            <a href="/admin/produtos/edit/{{_id}}" class="btn btn-primary float-right mr-3 ml-4">Editar</a>
+            <input type="hidden" name="id" value="{{_id}}">
+            <button type="submit" class="btn btn-danger float-right">Del</button>
+        </form>
+    </div>
+</div>
+{{else}}
+    <h5>Nenhum produto cadastrado nessa categoria...</h5>
+{{/each}}
