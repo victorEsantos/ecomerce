@@ -26,21 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cde86fd1-1c57-4df7-ba6c-98d49624c032" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/cadastrarOS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/cadastrarProd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/editarOS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/editarProd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/loginAdm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/loginUsuario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/visualizarOS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/visualizarProd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/loginPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/_navbar.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/_navbar.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/usuario/login.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/usuario/login.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +79,7 @@
       <workItem from="1604102407755" duration="113000" />
       <workItem from="1604623662344" duration="57000" />
       <workItem from="1604772903347" duration="106000" />
-      <workItem from="1604853978584" duration="2994000" />
+      <workItem from="1604853978584" duration="6763000" />
     </task>
     <task id="LOCAL-00001" summary="tudo victor">
       <created>1603653829336</created>
@@ -106,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603654306118</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refatoracao total + back">
+      <created>1604858314763</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604858314763</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,17 +123,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tudo victor" />
     <MESSAGE value="correções pontuais" />
-    <option name="LAST_COMMIT_MESSAGE" value="correções pontuais" />
+    <MESSAGE value="refatoracao total + back" />
+    <option name="LAST_COMMIT_MESSAGE" value="refatoracao total + back" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604854845194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604854845194" />
-    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2" timestamp="1603654304832">
+    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2" timestamp="1604858313746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603654304832" />
+    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604858313746" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1603653639508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,10 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603928884817" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604857355478">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604858320667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604857355478" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604858320667" />
     <state x="753" y="419" key="git4idea.ui.GitStashDialog" timestamp="1604857292443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

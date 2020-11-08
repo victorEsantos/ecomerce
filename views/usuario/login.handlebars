@@ -1,13 +1,11 @@
 
-<div class="card">
-    <div class="card-body">
-        <form action="/usuario/login" method="post">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" name="email">
-
-        <label for="senha">Senha</label>
-        <input type="password" class="form-control" name="senha">
-        <button type="submit" class="btn btn-success mt-4">Login</button>
-        </form>
-    </div>
-</div>
+<form class="form-login form-signin" action="/usuario/login" method="post">
+    <img src="https://i.imgur.com/f6A7lV5.png" class="rounded mx-auto d-block mb-4" id="logo-img"><br>
+    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    <label class="sr-only" for="user">Email</label>
+    <input name="email" type="text" id="user" class="form-control mb-4" placeholder="Email de usuário" required>
+    <label class="sr-only" for="password">Senha</label>
+    <input name="senha" type="password" id="password" class="form-control mb-4" placeholder="Senha" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+    <p class="text-center mt-1">Ainda não tem um cadastro, <a disabled href="/usuario/registro">clique aqui</a> para se cadastrar!</p>
+</form>
