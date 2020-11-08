@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Ordem de Serviço</title>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/editarOS.css">
+    <script src="../js/editarOS.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">E-comerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuarios
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizarUsuarios.html">Visualizar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastrarUsuarios.html">Cadastrar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ordens de Serviço
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizarOS.html">Visualizar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastrarOS.html">Cadastrar</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="visualizarProd.html">Visualizar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="cadastrarProd.html">Cadastrar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ADM AREA</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..."
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+      <div class="main">
+
+        <h1 class="text-center">Editar Ordem de Serviço</h1>
+        <br><br>
+
+        <form class="formSec">
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputNome">Nome</label>
+                <input type="nome" class="form-control" id="inputNome" placeholder="Nome">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Data entrega</label>
+                <input type="date" class="form-control" id="inputLastName">
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">E-mail</label>
+                    <input type="nome" class="form-control" id="inputEmail" placeholder="E-mail">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCpf">CPF</label>
+                    <input type="text" class="form-control" id="inputCpf" placeholder="CPF">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputRua">Rua</label>
+                <input type="text" class="form-control" id="inputRua" placeholder="Rua">
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-control">
+                    <option value="0" selected>Choose...</option>
+                    <option value="sc">SC</option>
+                    <option value="sp">SP</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputCep">CEP</label>
+                <input type="text" class="form-control" id="inputCep">
+            </div>
+            </div>
+            <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                Check me out
+                </label>
+            </div>
+            </div>
+            
+            
+            <br>
+            <br>
+
+            
+            <a data-id="1" id="adicionarCampo" class="badge badge-success pointer">Mais um produto</a>
+            <div id="formulario">
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="selectCategoria0">Categoria</label>
+                        <select class="custom-select" id="selectCategoria0">
+                            <option selected value="0">Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="selectProduto0">Produto</label>
+                        <select class="custom-select" id="selectProduto0">
+                            <option selected value="0">Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputQtd0">Quantidade</label>
+                        <input type="number" class="form-control" id="inputQtd0" placeholder="Quantidade0">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputObs0">Observação</label>
+                        <input type="text" class="form-control" id="inputObs0" placeholder="Obs...">
+                    </div>         
+                </div>
+                
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="clearAllFields()">Limpar Campos</button>
+        </form>
+    </div>
+
+
+</body>
+</html>

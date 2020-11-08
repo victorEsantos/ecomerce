@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cde86fd1-1c57-4df7-ba6c-98d49624c032" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/cadastrarOS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/cadastrarProd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/editarOS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/editarProd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/loginAdm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/loginUsuario.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/visualizarOS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages-backup-temporario/visualizarProd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/loginPage.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jNn3OG7fomWIDIPr4NS5GJzUFg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cde86fd1-1c57-4df7-ba6c-98d49624c032" name="Default Changelist" comment="" />
+      <created>1603653216976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603653216976</updated>
+      <workItem from="1603653218040" duration="1128000" />
+      <workItem from="1603924533421" duration="2234000" />
+      <workItem from="1604096207432" duration="589000" />
+      <workItem from="1604102407755" duration="113000" />
+      <workItem from="1604623662344" duration="57000" />
+      <workItem from="1604772903347" duration="106000" />
+      <workItem from="1604853978584" duration="2994000" />
+    </task>
+    <task id="LOCAL-00001" summary="tudo victor">
+      <created>1603653829336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603653829336</updated>
+    </task>
+    <task id="LOCAL-00002" summary="correções pontuais">
+      <created>1603654306118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603654306118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tudo victor" />
+    <MESSAGE value="correções pontuais" />
+    <option name="LAST_COMMIT_MESSAGE" value="correções pontuais" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604854845194">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604854845194" />
+    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2" timestamp="1603654304832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603654304832" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1603653639508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603653639508" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1604854607687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604854607687" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1604854607696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604854607696" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1603928884817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603928884817" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604857355478">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604857355478" />
+    <state x="753" y="419" key="git4idea.ui.GitStashDialog" timestamp="1604857292443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="419" key="git4idea.ui.GitStashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604857292443" />
+    <state x="753" y="366" key="git4idea.ui.GitUnstashDialog" timestamp="1604857377070">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="366" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604857377070" />
+  </component>
+</project>
