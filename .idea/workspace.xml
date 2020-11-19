@@ -27,9 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cde86fd1-1c57-4df7-ba6c-98d49624c032" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/_navbar.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/_navbar.handlebars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/usuario/login.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/usuario/login.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jNn3OG7fomWIDIPr4NS5GJzUFg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,22 +47,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../frota" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,7 +65,9 @@
       <workItem from="1604102407755" duration="113000" />
       <workItem from="1604623662344" duration="57000" />
       <workItem from="1604772903347" duration="106000" />
-      <workItem from="1604853978584" duration="6763000" />
+      <workItem from="1604853978584" duration="6813000" />
+      <workItem from="1604961909625" duration="601000" />
+      <workItem from="1605653337178" duration="399000" />
     </task>
     <task id="LOCAL-00001" summary="tudo victor">
       <created>1603653829336</created>
@@ -102,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604858314763</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="jumbotrom e navbar login">
+      <created>1604862148345</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604862148345</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,21 +119,26 @@
     <MESSAGE value="tudo victor" />
     <MESSAGE value="correções pontuais" />
     <MESSAGE value="refatoracao total + back" />
-    <option name="LAST_COMMIT_MESSAGE" value="refatoracao total + back" />
+    <MESSAGE value="jumbotrom e navbar login" />
+    <option name="LAST_COMMIT_MESSAGE" value="jumbotrom e navbar login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604854845194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604854845194" />
-    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2" timestamp="1604858313746">
+    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2" timestamp="1604862147306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604858313746" />
+    <state x="198" y="41" width="1642" height="999" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604862147306" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1603653639508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603653639508" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605653745513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605653745513" />
     <state x="184" y="86" key="MergeDialog" timestamp="1604854607687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -147,14 +147,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604854607696" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1603928884817">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605653542963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603928884817" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604858320667">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605653542963" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604862152811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604858320667" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604862152811" />
+    <state x="678" y="239" width="793" height="801" key="find.popup" timestamp="1605653583833">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="678" y="239" width="793" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605653583833" />
     <state x="753" y="419" key="git4idea.ui.GitStashDialog" timestamp="1604857292443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,5 +167,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="753" y="366" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604857377070" />
+    <state x="342" y="140" key="new project wizard" timestamp="1605653684162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605653684162" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1605653532611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605653532611" />
   </component>
 </project>
