@@ -19,6 +19,17 @@
 
             <label for="senha2">Repita sua senha:</label>
             <input type="password" name="senha2" class="form-control">
+
+            {{#if userIsAdm}}
+                <label for="isAdmin">É admin?</label>
+                <select name="eAdmin" id="isAdmin" class="form-control">
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
+            {{else}}
+
+            {{/if}}
+            <br>
             <button type="submit" class="btn btn-success mt-4">Criar conta</button>
         </form>
     </div>

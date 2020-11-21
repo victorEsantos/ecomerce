@@ -4,11 +4,15 @@ const mongoose = require('mongoose')
 
 require("../models/Categoria")
 const Categoria = mongoose.model("categorias")
+
 require("../models/Postagem")
 const Postagem = mongoose.model("postagens")
 
 require("../models/Produto")
 const Produto = mongoose.model("produtos")
+
+require("../models/Usuario")
+const Usuario = mongoose.model("usuarios")
 
 const {isAdmin}= require("../helpers/isAdmin")
 
@@ -313,5 +317,75 @@ router.post("/postagens/deletar", isAdmin, (req, res)=>{
         res.redirect("/admin/postagens")
     })
 })
+
+//usuarios
+router.get('/usuarios', isAdmin, (req, res) => {
+    Usuario.find().lean().then((usuarios)=>{
+        res.render('usuario/usuarios', {usuarios})
+    }).catch((err)=>{
+        req.flash("error_msg", "Houve um erro ao listar usuarios");
+        res.redirect("/admin")
+    })
+})
+
+router.post("/usuarios/deletar", isAdmin, (req, res)=>{
+    Usuario.remove({_id: req.body.id}).then(()=>{
+        req.flash("success_msg", "deletado com sucesso!")
+        res.redirect("/admin/usuarios")
+    }).catch(()=>{
+        req.flash("error_msg", "erro ao editar!")
+        res.redirect("/admin/usuarios")
+    })
+})
+
+router.get("/usuarios/edit/:id", isAdmin, (req, res) => {
+    Usuario.findOne({_id: req.params.id}).lean().then((usuario) => {
+        res.render("admin/editusuarios", {usuario})
+    }).catch((err) => {
+        req.flash("error_msg", "Este usuario não existe")
+        res.redirect("/admin")
+    })
+})
+
+router.post('/usuarios/edit', isAdmin, (req, res) => {
+
+    Usuario.findOne({_id: req.body.id}).then((usuario)=>{
+        Usuario.findOne({email: req.body.email}).then((usuario2)=>{
+            console.log("Eadminnnnn "+req.body.eAdmin)
+
+            if(usuario2 == null || usuario.email == usuario2.email){
+
+                usuario.nome = req.body.nome
+                usuario.email = req.body.email
+                usuario.eAdmin = req.body.eAdmin
+
+                usuario.save().then(()=>{
+                    req.flash("success_msg", "Usuário editado com sucesso3")
+                    res.redirect("/admin/usuarios")
+                }).catch((err)=>{
+                    console.log(err)
+                    req.flash("error_msg", "erro ao salvar edicao de usuário")
+                    res.redirect("/admin/usuarios")
+                })
+            }else if(usuario2 != null && usuario._id != usuario2._id){
+                req.flash("error_msg", "Este email já foi registrado!")
+                res.redirect("/admin/usuarios")
+            }else{
+                req.flash("error_msg", "erro interno")
+                res.redirect("/admin/usuarios")
+            }
+
+        }).catch((err)=>{
+            req.flash("error_msg", "Ero ao editar usuário")
+            res.redirect("/admin/usuarios")
+        })
+    }).catch((err)=>{
+        req.flash("error_msg", "Ero ao editar usuário")
+        res.redirect("/admin/usuarios")
+    })
+})
+
+
+
 
 module.exports = router
