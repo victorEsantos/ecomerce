@@ -53,7 +53,8 @@ require("./config/auth")(passport)
         app.set('view engine', 'handlebars')
     //mongose
         mongoose.Promise = global.Promise;
-        mongoose.connect("mongodb://localhost/blogapp",{
+        //antes mongodb://localhost/blogapp
+        mongoose.connect("mongodb://blogmongol:blogmongol123@mongo_blogmongol:27017/blogmongol",{
             useNewUrlParser: true,
             useUnifiedTopology: true
         }).then(() =>{
