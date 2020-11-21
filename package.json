@@ -1,10 +1,11 @@
 {
   "name": "blogmongol",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Aplicação em node.js usando express, handlebars, passport, e mongo(mongoose) como banco",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,14 @@
     "mongoose": "^5.10.13",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorEsantos/ecomerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorEsantos/ecomerce/issues"
+  },
+  "homepage": "https://github.com/victorEsantos/ecomerce#readme"
 }
