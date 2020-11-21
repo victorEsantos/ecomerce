@@ -128,5 +128,8 @@ require("./config/auth")(passport)
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
-    console.log('Its runnin! on port 8081')
+    console.log('Its runnin! on port '+PORT)
 })
+
+//exportar banco para servidor
+//mongodump -h kamino.mongodb.umbler.com:38141 -d blogmongol -u blogmongol -p blogmongol123 --out C:\data\db\blogapp
