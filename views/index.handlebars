@@ -1,43 +1,58 @@
+<br>
 <div class="jumbotron">
     <h1 class="display-4">Bem vindo ao e-comerce VGK!</h1>
     <p class="lead">Os melhores preços e os melhores produtos em um só lugar!.</p>
     <hr class="my-4">
     <p>Tudo para melhorar seu desempenho nos games!</p>
-    <a class="btn btn-secondary btn-lg" href="/usuario/registro" role="button">Crie uma conta</a>
-    <a class="btn btn-primary btn-lg" href="/usuario/login" role="button">Faça login</a>
+    <a class="btn btn-warning btn-lg" href="/usuario/registro" role="button">Crie uma conta</a>
+    <a class="btn btn-danger btn-lg" href="/usuario/login" role="button">Faça login</a>
 </div>
 <hr>
 
-
-<div class="center slider">
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+<div class="sliderParent">
+    <div class="center slider">
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
+        <div>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
+        </div>
     </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-    <div>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/81qarft2fdL._AC_SL1500_.jpg">
-    </div>
-
 </div>
 
 <h2>Nossos produtos:</h2>
+<div class="categoriaslateral mt-1 ml-5 d-inline-block">
+    <br>
+    <span class="title">Categorias</span>
+
+    {{#each categorias}}
+        <hr>
+        <a href="/categorias/{{slug}}"style="text-decoration: none; cursor:pointer; color:#d91300; font-size: 20px;">
+        {{nome}}
+    </a>
+    {{else}}
+    {{/each}}
+    <br>
+    <br>
+</div>
 <div class="parent">
     {{#each produtos}}
         <div class="card col-md-5 d-inline-block m-2">
@@ -75,6 +90,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
     }
 
     .imgProd {
@@ -85,5 +101,31 @@
     .slider{
         background-color: #ffffff;
         border-radius: 5px;
+
+    }
+    .slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
+        color: black;
+    }
+    .sliderParent{
+        padding: 10px;
+    }
+    .card{
+        border: 1px solid orangered;
+    }
+    .categoriaslateral{
+        float: left;
+        width: 15%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid orangered;
+        text-align: center;
+    }
+    .categoriaslateral .title{
+        background-color: orangered;
+        padding: 2% 25% 2% 25%;
+        border-radius: 10px;
+        color: white;
+
+
     }
 </style>

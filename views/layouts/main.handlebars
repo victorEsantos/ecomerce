@@ -19,16 +19,22 @@
 
 </style>
 <body>
-{{>_navbar}}
-{{>_msg}}
 <img src="https://i.imgur.com/JX08k7c.png" alt="Banner Kabum black Friday" class="bannerBlack">
+<div class="container mt-4" style="background-color: #bf1300">
+    {{>_navbar}}
+</div>
 <div class="container mt-4">
+    {{>_msg}}
     {{{body}}}
 </div>
 </body>
 <style>
     .bannerBlack{
         width: 100%;
+    }
+    .container{
+        background-color: #ffffff;
+        height: 100%;
     }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"

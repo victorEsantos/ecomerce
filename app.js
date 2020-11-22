@@ -68,7 +68,12 @@ const {conections}= require("./helpers/connec")
 //rotas
     app.get('/', (req, res)=>{
         Produto.find().lean().populate("categoria").sort({data: "desc"}).then((produtos)=>{
-            res.render("index", {produtos})
+            Categoria.find().lean().then((categorias) => {
+                res.render("index", {produtos, categorias})
+            }).catch((err)=>{
+                req.flash("error_msg", "Erro interno em categorias")
+                res.redirect("/404")
+            })
         }).catch((err)=>{
             req.flash("error_msg", "Erro interno")
             res.redirect("/404")
@@ -130,6 +135,3 @@ const PORT = process.env.PORT || 3000
 app.listen(conections.porta, () => {
     console.log('Its runnin! on port '+ conections.porta)
 })
-
-//exportar banco para servidor
-//mongodump -h kamino.mongodb.umbler.com:38141 -d blogmongol -u blogmongol -p blogmongol123 --out C:\data\db\blogapp
