@@ -124,7 +124,7 @@ router.post('/produtos/edit', isAdmin, (req, res) => {
 
 
         produto.save().then(()=>{
-            req.flash("success_msg", "Produto editado com sucesso3")
+            req.flash("success_msg", "Produto editado com sucesso")
             res.redirect("/admin/produtos")
         }).catch((err)=>{
             console.log(err)
@@ -295,15 +295,15 @@ router.post('/postagens/edit', isAdmin, (req, res) => {
         postagem.categoria = req.body.categoria
 
         postagem.save().then(()=>{
-            req.flash("success_msg", "Postagem editada com sucesso3")
+            req.flash("success_msg", "Postagem editada com sucesso")
             res.redirect("/admin/postagens")
         }).catch((err)=>{
             console.log(err)
-            req.flash("error_msg", "erro ao salvar edicao de postagem4")
+            req.flash("error_msg", "erro ao salvar edicao de postagem")
             res.redirect("/admin/postagens")
         })
     }).catch((err)=>{
-        req.flash("error_msg", "Ero ao editar postagem5")
+        req.flash("error_msg", "Ero ao editar postagem")
         res.redirect("/admin/postagens")
     })
 })
@@ -360,7 +360,7 @@ router.post('/usuarios/edit', isAdmin, (req, res) => {
                 usuario.eAdmin = req.body.eAdmin
 
                 usuario.save().then(()=>{
-                    req.flash("success_msg", "Usuário editado com sucesso3")
+                    req.flash("success_msg", "Usuário editado com sucesso")
                     res.redirect("/admin/usuarios")
                 }).catch((err)=>{
                     console.log(err)

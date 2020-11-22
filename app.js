@@ -108,7 +108,7 @@ const {conections}= require("./helpers/connec")
     })
 
     app.get("/categorias/:slug", (req, res)=>{
-        Categoria.findOne({slug: req.params.slug}).lean().then((categoria)=>{
+        Categoria.findOne({slug: new RegExp(req.params.slug)}).lean().then((categoria)=>{
             if(categoria){
                 Produto.find({categoria: categoria._id}).lean().then((produtos)=>{
                     res.render("categoria/produtos",{produtos, categoria})
@@ -126,6 +126,15 @@ const {conections}= require("./helpers/connec")
         })
     })
 
+
+    app.get("/produtos/:nome", (req, res)=>{
+        Produto.find({$or: [{nome: new RegExp(req.params.nome)}, {descricao: new RegExp(req.params.nome)}]}).lean().then((produtos)=>{
+            res.render("usuario/produtos", {produtos})
+        }).catch((err)=>{
+            req.flash("error_msg", "Este produto não existe")
+            res.redirect("/admin/produtos")
+        })
+    })
     app.use('/admin', admin)
     app.use('/usuario', usuario)
 

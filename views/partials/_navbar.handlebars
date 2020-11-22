@@ -54,8 +54,8 @@
     {{#if user}}
       <ul class="navbar-nav ml-auto">
         <form class="form-inline my-2 my-lg-0 mr-4">
-          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..." aria-label="Search">
-          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Searchi</button>
+          <input id="pequisa" class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..." aria-label="Search">
+          <a id="pequisabtn" onclick="minhafunc()" class="btn btn-outline-danger my-2 my-sm-0" type="submit" href="/produtos/gt">Search</a>
         </form>
         <li class="nav-item">
             <a class="nav-link" href="/usuario/logout" tabindex="-1" aria-disabled="true">LogOut</a>
@@ -64,8 +64,8 @@
     {{else}}
       <ul class="navbar-nav ml-auto">
         <form class="form-inline my-2 my-lg-0 mr-4">
-          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..." aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          <input id="pequisa" class="form-control mr-sm-2" type="search" placeholder="Pesquisar Produtos..." aria-label="Search">
+          <a id="pequisabtn" onclick="minhafunc()" class="btn btn-outline-light my-2 my-sm-0" type="submit" href="/produtos/gt">Searchx</a>
         </form>
         <li class="nav-item">
             <a class="nav-link active" href="/usuario/login" tabindex="-1">LogIn</a>
@@ -89,3 +89,12 @@
         border-color: rgba(231, 19, 19, 0.3);
     }
 </style>
+
+<script>
+    function minhafunc(){
+        var value = document.getElementById("pequisa").value
+        var btn = document.getElementById("pequisabtn")
+        btn.setAttribute("href","/produtos/"+value);
+        btn.click()
+    }
+</script>
