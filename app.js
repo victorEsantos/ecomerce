@@ -37,6 +37,16 @@ const {conections}= require("./helpers/connec")
             res.locals.error_msg = req.flash("error_msg")
             res.locals.error = req.flash("error")
             res.locals.user = req.user || null;
+            if(req.user != null && req.user != undefined){
+                var nome = req.user.nome;
+                if(nome.length > 8){
+                    nome = nome.split(" ")[0]
+                    if(nome.length > 9){
+                        nome = nome.substr(0,7)+"..."
+                    }
+                }
+                res.locals.usern = nome;
+            }
             res.locals.userIsAdm = req.user != undefined && req.user.eAdmin == 1;
             if(req.user != undefined && req.user != null){
                 res.locals.userName = req.user.nome;
