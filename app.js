@@ -16,6 +16,7 @@ const Produto = mongoose.model("produtos")
 const usuario = require('./routes/usuario')
 const passport = require('passport')
 require("./config/auth")(passport)
+const {conections}= require("./helpers/connec")
 
 //config
     //sessao
@@ -53,14 +54,13 @@ require("./config/auth")(passport)
         app.set('view engine', 'handlebars')
     //mongose
         mongoose.Promise = global.Promise;
-        //antes mongodb://localhost/blogapp
-        mongoose.connect("mongodb://blogmongol:blogmongol123@mongo_blogmongol:27017/blogmongol",{
+        mongoose.connect(conections.mongoConec,{
             useNewUrlParser: true,
             useUnifiedTopology: true
         }).then(() =>{
             console.log("connectado ao mongo")
         }).catch((err)=>{
-            console.log("erro ao connectar: "+ err)
+            console.log("erro ao connectar: "+ err + "\n VERIFIQUE O ARQUIVO helpers > connec.js")
         })
     //Public pasta
         app.use(express.static(path.join(__dirname, "public")))
@@ -127,8 +127,8 @@ require("./config/auth")(passport)
 
 
 const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-    console.log('Its runnin! on port '+PORT)
+app.listen(conections.porta, () => {
+    console.log('Its runnin! on port '+ conections.porta)
 })
 
 //exportar banco para servidor
