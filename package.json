@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "cypress": "cypress run",
+    "cypress:chrome": "cypress run -b chrome",
+    "cypress:open": "cypress open"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +23,9 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress": "^6.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/victorEsantos/ecomerce.git"
